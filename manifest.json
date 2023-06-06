@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Object Viewer",
+  "version": "1.0",
+  "description": "Displays window.__x__ as a formatted JSON object.",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Object Viewer"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"]
+}
